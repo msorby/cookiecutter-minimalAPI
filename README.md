@@ -1,1 +1,1 @@
-# cookiecutter-minimalAPI
+# {{cookiecutter.service_name}}
