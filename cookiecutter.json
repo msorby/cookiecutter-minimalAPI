@@ -1,7 +1,7 @@
 {
     "full_name": "Morten Sorby",
     "github_username": "msorby",
-    "app_name": "minimalAPI template",
+    "service_name": "test",
     "project_short_description": "A C# minimalAPI project",
     "use_docker": "y",
     "use_git": "y"
