@@ -1,6 +1,7 @@
 {
     "full_name": "Morten Sorby",
     "github_username": "msorby",
+    "github_workflow_folder": ".github",
     "service_name": "test",
     "project_short_description": "A C# minimalAPI project",
     "use_docker": "y",
