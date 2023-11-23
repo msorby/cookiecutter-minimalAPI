@@ -44,6 +44,11 @@ def move_githubfolder():
     sourcefolder = os.path.join(PROJECT_DIRECTORY, ".github")
     p = Path(sourcefolder).absolute()
     parent_dir = p.parents[1]
+
+    print(sourcefolder)
+    print(p)
+    print(parent_dir)
+
     p.rename(parent_dir / p.name)
     
     #shutil.move(os.path.join(PROJECT_DIRECTORY, .".github"), "..")
