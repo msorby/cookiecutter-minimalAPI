@@ -36,6 +36,12 @@ def init_git():
         git.wait()
 
 
+def move_githubfolder():
+    """
+    Moves the github folder to the top directory
+    """
+    shutil.move(os.path.join(PROJECT_DIRECTORY, .".github"), "..")
+
 def remove_docker_files():
     """
     Removes files needed for docker if it isn't going to be used
@@ -45,6 +51,8 @@ def remove_docker_files():
             PROJECT_DIRECTORY, filename
         ))
 
+# 0. Move github folder to top directory
+move_githubfolder()
 
 # 1. Remove Dockerfiles if docker is not going to be used
 if '{{ cookiecutter.use_docker }}'.lower() != 'y':
