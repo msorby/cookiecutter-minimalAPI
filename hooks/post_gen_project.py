@@ -40,7 +40,7 @@ def move_githubfolder():
     """
     Moves the github folder to the top directory
     """
-    sourcefolder = os.path.join(PROJECT_DIRECTORY, .".github")
+    sourcefolder = os.path.join(PROJECT_DIRECTORY, ".github")
     p = Path(sourcefolder).absolute()
     parent_dir = p.parents[1]
     p.rename(parent_dir / p.name)
