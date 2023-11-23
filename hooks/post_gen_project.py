@@ -63,7 +63,7 @@ def remove_docker_files():
         ))
 
 # 0. Move github folder to top directory
-move_githubfolder()
+#move_githubfolder()
 
 # 1. Remove Dockerfiles if docker is not going to be used
 if '{{ cookiecutter.use_docker }}'.lower() != 'y':
